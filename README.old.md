@@ -1,2 +1,0 @@
-# psychic-umbrella
-website nuke
