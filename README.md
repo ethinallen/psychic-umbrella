@@ -6,22 +6,26 @@
 ---
 
 ### Home Page
-  - mailto link to gmail
-  - particles working on color tiles
+  - [ ] mailto link to gmail
+  - [ ] particles working on color tiles
+
+### Seattle
+  - [ ] Custom pins
+  - [ ] link reviews
+  - [ ] link other pages / different cards?
 
 ### Gitter
-  - material ui applied to all elements
-  - no more inheriting of important css from parents
+  - [ ] material ui applied to all elements
+  - [ ] no more inheriting of important css from parents
 
 ### Ubersetzen
-  - Login with spotify
-  - auth0 integration
-  - store songs in metadata?
+  - [ ] Login with spotify
+  - [ ] auth0 integration
+  - [ ] store songs in metadata?
 ---
 
 ## TODO
 
 - [ ] Get pages working on home page
 - [ ] Gitter CSS working
-- [ ] Trim dependencies
-- [ ]
+- [x] Trim dependencies

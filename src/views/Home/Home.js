@@ -81,7 +81,7 @@ class Home extends Component {
         }}
 
           headline={"I am unconventional."}
-          subtext={"I think that everyone could benefit from being a little unconventional. I certainly am. I enjoy my strolls off of the beaten path because I think that is where a lot of innovation can be found."} />
+          subtext={"I think that everyone could benefit from being a little unconventional. I certainly am. I enjoy my strolls off of the beaten path. I also enjoy talking with others and learning more about their experiences. If you feel so inclined, send an email to me: andrewbemery@gmail.com"} />
         </div>
         </div>
       </div>
