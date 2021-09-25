@@ -8,7 +8,7 @@ var h = window.innerHeight-10;
 function Page(props) {
 
   return (
-    <div className="page-container">
+    <div className={`page-container ${props.direction}`}>
 
       <div className="textBlock" style={props.textBlockStyle}>
       <div className="particleContainer">

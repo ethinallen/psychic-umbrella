@@ -40,6 +40,11 @@ export class MapContainer extends Component {
             <div>
               <h1>{this.state.selectedPlace.name}</h1>
             </div>
+
+            <Marker
+    name={'Center of the Universe'}
+    position={{lat: 47.650661583594946, lng: -122.34996448988886}}
+   />
         </Map>
       </div>
     );
