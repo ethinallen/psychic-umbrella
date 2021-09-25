@@ -35,6 +35,17 @@
   }
 }
 
+.page-container {
+  display: flex;
+}
+
+.page-container.left {
+  flex-direction: row;
+}
+
+.page-container.right {
+  flex-direction: row-reverse;
+}
 
 .particleContainer {
   position: absolute;

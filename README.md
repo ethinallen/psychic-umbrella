@@ -7,7 +7,7 @@
 
 ### Home Page
   - [ ] mailto link to gmail
-  - [ ] particles working on color tiles
+  - [x] particles working on color tiles
 
 ### Seattle
   - [ ] Custom pins

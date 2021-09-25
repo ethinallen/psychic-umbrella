@@ -29,6 +29,7 @@ class Home extends Component {
             }}
             headline={'My name is \nDrew Emery.'}
             subtext={"I am a recent Clemson University Alum. I like biking, racing, and small Japanese cars. I love learning and challenging myself. Scroll to learn more about me!"}
+            direction="right"
           />
         </div>
         <div className="Page" id="second">
@@ -47,6 +48,8 @@ class Home extends Component {
 
             headline={auth0Link}
             subtext={'I am passionate about helping clients build scalable, affordable cloud infrastructure.'}
+            direction="left"
+
             />
         </div>
 
@@ -54,16 +57,15 @@ class Home extends Component {
           <Page
             imageBlockStyle={{
               ...IMAGESTYLE,
-              float: 'left',
               backgroundImage: 'url(https://cdn.andrewemery.io/needle_telescope.png)',
             }}
-          textBlockStyle={{
-            float:'right',
-            backgroundColor: '#2a9d8f'
-        }}
+            textBlockStyle={{
+              backgroundColor: '#2a9d8f'
+          }}
 
           headline={"I'm based out of Seattle."}
           subtext={"My watch never left Seattle time! From the moment I crossed into PST this winter I set my watch and only looked forward. The Pacific Northwest is my favorite locale and I look forward to making The Emerald City my home."}
+          direction="right"
           />
         </div>
 
