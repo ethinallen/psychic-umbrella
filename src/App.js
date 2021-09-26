@@ -8,21 +8,12 @@ import './App.css';
 
 const history = createBrowserHistory();
 
-// ReactGA.initialize("UA-183493843-1", {
-//     debug: false,
-//     gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
-//   });
-//
-// ReactGA.set({ page: history.location.pathname }); // Update the user's current page
-// ReactGA.pageview(history.location.pathname);
+ReactGA.initialize("UA-183493843-1", {
+    debug: false,
+    gaOptions: { cookieFlags: 'max-age=7200;samesite=none;secure' },
+  });
 
-ReactGA.initialize('UA-183493843-01', {
-  debug: true,
-  titleCase: false,
-  gaOptions: {
-    userId: 123
-  }
-});
+
 
 ReactGA.set({ page: history.location.pathname }); // Update the user's current page
 ReactGA.pageview(history.location.pathname);
