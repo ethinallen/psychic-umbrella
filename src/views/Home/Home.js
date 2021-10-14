@@ -5,7 +5,7 @@ import Page from './Page'
 
 import './Home.css'
 
-const auth0Link = <p> I'm a Sales Engineer <a href="https://www.auth0.com">@Auth0</a>.</p>;
+const auth0Link = <p> I'm an Identity Solutions Engineer <a href="https://www.auth0.com">@Auth0</a>.</p>;
 
 
 class Home extends Component {
@@ -47,7 +47,7 @@ class Home extends Component {
             }}
 
             headline={auth0Link}
-            subtext={'I am passionate about helping clients build scalable, affordable cloud infrastructure.'}
+            subtext={'I want everyone to build secure web applications. Talk to me and we can find out how Auth0 can help you accomplish that!'}
             direction="left"
 
             />

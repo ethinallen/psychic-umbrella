@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import locations from './Pins';
+
+console.log(locations);
+
+locations.map(((cloud, index) => console.log(cloud)))
+
 
 export class MapContainer extends Component {
   constructor(props) {
@@ -24,14 +30,22 @@ export class MapContainer extends Component {
     }
 
     return (
+
+
+
+
       <div
         style={{
           position: "relative",
           height: "calc(100vh - 20px)"
         }}
       >
+      <div>
+
+      </div>
         <Map style={{}}
           google={this.props.google}
+          onClick={this.onMapClicked}
           zoom={13}
           initialCenter={{
             lat: 47.650661583594946,
@@ -43,8 +57,19 @@ export class MapContainer extends Component {
 
             <Marker
     name={'Center of the Universe'}
+    onClick={this.onMarkerClick}
     position={{lat: 47.650661583594946, lng: -122.34996448988886}}
    />
+      <InfoWindow
+        marker={this.state.activeMarker}
+        visible={this.state.showingInfoWindow}>
+        <div>
+        <h1>{"SOY BOY CUCK LOL"}</h1>
+        <h1>{"SOY BOY CUCK LOL"}</h1>
+        <h1>{"SOY BOY CUCK LOL"}</h1>
+        <h1>{"SOY BOY CUCK LOL"}</h1>
+        </div>
+      </InfoWindow>
         </Map>
       </div>
     );
