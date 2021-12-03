@@ -12,8 +12,10 @@ function Page(props) {
       <div className="header">
         {props.content}
       </div>
-      <div className="sub">
-        {props.sub}
+      <div className="content-container">
+        <div className="sub">
+          {props.sub}
+        </div>
       </div>
     </>
   );
