@@ -22,3 +22,151 @@
   border-style: solid;
   border-color: white;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.App {
+  text-align: center;
+  background-color: #2E3440;
+  height: auto;
+  width: 100vw;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  bottom: 10px;
+
+}
+
+.page-box {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  padding-top: 10px;
+  color: #D8DEE9;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-content: center;
+  font-family: 'Merriweather', serif;
+}
+
+.the-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  width: 40vw;
+  max-width: 800px;
+  border-radius: 10px;
+  min-width: 200px;
+  height: 40vh;
+  padding: 10px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.video-descriptor {
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  font-size: 1rem;
+  margin: 15px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+
+  height: 30vh;
+
+  width: 15vw;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+.big-box-thing {
+  height: 100vh;
+  width: 100vw;
+}
+
+#box1 {
+  background-color: rgba(191, 97, 106, .4);
+}
+
+#box2 {
+  background-color: rgba(208, 135, 112, .4);
+}
+
+#box3 {
+  background-color: rgba(235, 203, 139, 0.4);
+}
+
+#box4 {
+  background-color: rgba(163, 190, 140, 0.4);
+}
+
+#box5 {
+  background-color: rgba(180, 142, 173, 0.4);
+}
+
+#box6 {
+  background-color: rgba(216, 222, 233, 0.4);
+}

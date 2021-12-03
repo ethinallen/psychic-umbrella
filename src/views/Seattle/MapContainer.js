@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import locations from './Pins';
 
-console.log(locations);
-
-locations.map(((cloud, index) => console.log(cloud)))
+// console.log(locations);
+//
+// locations.map(((cloud, index) => console.log(cloud)))
 
 
 export class MapContainer extends Component {
