@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { IMAGESTYLE } from './constants.js'
 import SwipeableViews from 'react-swipeable-views';
+import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 import Page from './Page'
 
@@ -28,6 +29,10 @@ class Home extends Component {
       <div className="App">
         <SwipeableViews enableMouseEvents="true">
           <div className="big-box-thing" style={Object.assign({}, styles.slide, styles.slide1)}>
+
+            <div className="chevron bounce">
+              <DoubleArrowIcon style={{ fontSize: "10rem" }}/>
+            </div>
             <div className="header">INTRODUCING</div>
           </div>
           <div className="big-box-thing" id="frame" style={Object.assign({}, styles.slide, styles.slide2)}>

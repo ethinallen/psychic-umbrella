@@ -1,3 +1,9 @@
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+   40% {transform: translatX(-30px);}
+   60% {transform: translatX(-15px);}
+}
+
 .page {
   height: 100vh;
   width: 100vw;
@@ -7,6 +13,35 @@
   top: 0px;
 }
 
+@keyframes bounce {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20vw);
+  }
+}
+/* Prefix Support */
+
+.chevron {
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(
+  .5, 0.05, 1, .5);
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, 200px, 0);
+  }
+}
 
 .download-button {
   border: none;
