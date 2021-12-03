@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
 import { IMAGESTYLE } from './constants.js'
 import SwipeableViews from 'react-swipeable-views';
-import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
 import Page from './Page'
 
 import './Home.css'
 
-const auth0Link = <p> I'm an Identity Solutions Engineer <a href="https://www.auth0.com">@Auth0</a>.</p>;
-
-
-const styles = {
-  slide1: {
-    background: 'rgba(46, 52, 64, 0.4)',
-  },
-  slide2: {
-    background: 'rgba(76, 86, 106, 0.4)',
-  },
-  slide3: {
-    background: 'rgba(67, 76, 94, 0.4)',
-  },
-};
-
 class Home extends Component {
 
   render() {
+
     return (
-      <div className="Page">
-        <div className="excuse-holder">
-        I'm working on it.
-        </div>
+      <div className="App">
+        <SwipeableViews enableMouseEvents="true">
+          <div className="big-box-thing" style={{background: 'rgba(37, 0, 14)'}}>
+            <Page content="Hello, It's nice to meet you!" sub="You can call me Drew." />
+          </div>
+          <div className="big-box-thing" id="frame" style={{background: 'rgba(19, 0, 7)'}}>
+            <Page content="Between you and me," sub=" I'm not exactly sure why you're on my website"/>
+          </div>
+          <div className="big-box-thing" style={{background: 'rgba(0, 0, 0, .97)'}}>
+            <section class="rain"></section>
+            <Page content="A little about me" sub="I live in Seattle"/>
+          </div>
+          <div className="big-box-thing" style={{background: 'rgba(56, 1, 22, 1)'}}>
+            <Page content="I work at Auth0" sub="We help secure applications"/>
+          </div>
+        </SwipeableViews>
       </div>
     );
   }
