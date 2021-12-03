@@ -8,9 +8,14 @@ var h = window.innerHeight-10;
 function Page(props) {
 
   return (
-    <div className="header">
-      Yo yo yo what is up guys. Today I am going to be driving around the Jeddah circuit in the Williams.
-    </div>
+    <>
+      <div className="header">
+        {props.content}
+      </div>
+      <div className="sub">
+        {props.sub}
+      </div>
+    </>
   );
 }
 
