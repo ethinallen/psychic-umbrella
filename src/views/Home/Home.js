@@ -26,23 +26,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="App">
-        <SwipeableViews enableMouseEvents="true">
-          <div className="big-box-thing" style={Object.assign({}, styles.slide, styles.slide1)}>
-
-            <div className="chevron bounce">
-              <DoubleArrowIcon style={{ fontSize: "10rem" }}/>
-            </div>
-            <div className="header">INTRODUCING</div>
-          </div>
-          <div className="big-box-thing" id="frame" style={Object.assign({}, styles.slide, styles.slide2)}>
-          <div className="header">ACTION PASTE THRILLER OF THE YEAR</div>
-
-          </div>
-          <div className="big-box-thing" style={Object.assign({}, styles.slide, styles.slide3)}>
-          <div className="header">GET GRIPPED ON</div>
-          </div>
-        </SwipeableViews>
+      <div className="Page">
+        <div className="excuse-holder">
+        I'm working on it.
+        </div>
       </div>
     );
   }
