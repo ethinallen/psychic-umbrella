@@ -20,16 +20,13 @@ class Home extends Component {
           </div>
           <div className="big-box-thing" style={{background: '#1b3a4b'}}>
             <section class="rain"></section>
-            <Page content="A little about me" sub="I live in Seattle"/>
-          </div>
-          <div className="big-box-thing" style={{background: '#272640'}}>
-            <Page content="I work at Auth0" sub="We help secure applications"/>
-          </div>
-          <div className="big-box-thing" style={{background: '#312244'}}>
-            <Page content="I have a lot of interests" sub="and I'd like to hear about yours!"/>
+            <Page content="This is my corner of the internet" sub="You can expect to find projects, thoughts, and various media on this site."/>
           </div>
           <div className="big-box-thing" style={{background: '#3e1f47'}}>
-            <Page content="If you feel so inclined" sub="you can find updates about my life here."/>
+            <Page content="sometimes this site may be broken" sub="ALTHOUGH I am getting better about deploying to dev first. You can expect outages to become less frequent as time goes on."/>
+          </div>
+          <div className="big-box-thing" style={{background: '#272640'}}>
+            <Page content="for work I am an identity solutions engineer @Auth0" sub="we help secure applications"/>
           </div>
         </SwipeableViews>
       </div>
