@@ -31,9 +31,6 @@ class Home extends Component {
           <div className="big-box-thing" style={{background: '#3e1f47'}}>
             <Page content="If you feel so inclined" sub="you can find updates about my life here."/>
           </div>
-          <div className="big-box-thing" style={{background: '#4d194d'}}>
-            <Page content="I work at Auth0" sub="We help secure applications"/>
-          </div>
         </SwipeableViews>
       </div>
     );
