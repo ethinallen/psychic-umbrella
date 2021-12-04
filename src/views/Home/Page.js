@@ -1,16 +1,36 @@
 import React from 'react';
-import Particles from 'react-particles-js';
 
 import './Page.css';
 
-var h = window.innerHeight-10;
-
 function Page(props) {
+
+  if (props.backg) {
+    return (
+      <>
+        <div className="topHalf">
+        <div className="media-container">
+          <img className="photo" alt="" src={props.backg}/>
+        </div>
+        <div className="header">
+          {props.content}
+        </div>
+        </div>
+        <div className="content-container">
+          <div className="sub">
+            {props.sub}
+          </div>
+        </div>
+      </>
+
+    );
+  }
 
   return (
     <>
+      <div className="topHalf">
       <div className="header">
         {props.content}
+      </div>
       </div>
       <div className="content-container">
         <div className="sub">
