@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdDoubleArrow } from "react-icons/md";
 
 import './Page.css';
 
@@ -6,6 +7,7 @@ function Page(props) {
 
   if (props.backg) {
     return (
+      <>
       <div className="imagecontainer">
         <div className="leftHalf">
         <div className="media-container">
@@ -13,15 +15,37 @@ function Page(props) {
         </div>
         </div>
         <div className="rightHalf">
-        <div className="header">
-          {props.content}
-        </div>
+          <div className="header">
+            {props.header}
+          </div>
           <div className="sub">
             {props.sub}
           </div>
+
+        </div>
+
+      </div>
+      <div className = "chevron"><MdDoubleArrow /></div>
+</>
+
+    );
+  }
+
+  if (props.specialBroken) {
+    return (
+      <>
+      <div className="topHalf">
+        <div className="header">
+          {props.header}
+        </div>
+        <div className="sub broken">broken</div>
+      </div>
+      <div className="content-container">
+        <div className="sub">
+          {props.sub}
         </div>
       </div>
-
+      </>
     );
   }
 
@@ -29,7 +53,7 @@ function Page(props) {
     <>
       <div className="topHalf">
       <div className="header">
-        {props.content}
+        {props.header}
       </div>
       </div>
       <div className="content-container">

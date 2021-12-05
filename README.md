@@ -6,7 +6,11 @@
 ---
 
 ### Home Page
-  - [ ] mailto link to gmail
+#### Main Components:
+  - header
+  - sub
+  - description
+  - media
   - [x] particles working on color tiles
 
 ### Seattle
@@ -26,6 +30,6 @@
 
 ## TODO
 
-- [ ] Get pages working on home page
+- [x] Get pages working on home page
 - [ ] Gitter CSS working
 - [x] Trim dependencies
