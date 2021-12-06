@@ -11,6 +11,7 @@ class Home extends Component {
 
     return (
       <div className="App">
+        <div className="navBar"></div>
         <SwipeableViews enableMouseEvents="true">
           <div className="page-container" style={{background: '#065a60'}}>
             <Page header="Hello, It's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>

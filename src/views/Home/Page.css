@@ -17,11 +17,19 @@
   width: 100vw;
   margin: 5vw;
   margin-top: 10vh;
-  /* display: flex; */
-  /* flex-wrap: nowrap; */
-  /* flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -29,7 +37,7 @@
   height: 5vh;
   font-size: 1.2rem;
   align-content: center;
-  margin: 5vw;
+  padding: .1rem;
 }
 
 .sub {
@@ -56,7 +64,9 @@
 
 .broken {
 	/* Here we declare our inline animation */
-	animation: hinge 3s infinite;
+  transform-origin: top left;
+  transform: rotate(60deg) translateY(40px);
+  animation: hinge 5s;
 }
 
 @keyframes hinge {
@@ -75,21 +85,14 @@
       transform-origin: top left;
       animation-timing-function: ease-in-out;
    }
-   90% {
-      transform: rotate(60deg) translateY(0);
+   100% {
+      transform: rotate(60deg) translateY(40px);
       opacity: 1;
       transform-origin: top left;
       animation-timing-function: ease-in-out;
    }
 
-   92% {
-     opacity: .3;
-   }
 
-   100% {
-      transform: translateY(700px);
-      opacity: 0;
-   }
 }
 
 .chevron {

@@ -35,10 +35,14 @@ function Page(props) {
     return (
       <>
       <div className="topHalf">
-        <div className="header">
-          {props.header}
+        <div className="headerContainer">
+          <div className="header">sometimes</div>
+          <div className="header">this</div>
+          <div className="header">site</div>
+          <div className="header">may</div>
+          <div className="header">be</div>
+          <div className="header broken">broken</div>
         </div>
-        <div className="sub broken">broken</div>
       </div>
       <div className="content-container">
         <div className="sub">
