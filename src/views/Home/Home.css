@@ -62,10 +62,18 @@ body {
 }
 
 .page-container {
+  scroll-snap-align: start;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
+}
+
+.pages {
+  height: 100vh;
+  width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
