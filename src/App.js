@@ -3,7 +3,6 @@ import Seattle from './views/Seattle/Seattle.js';
 import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
-import { BrowserView, MobileView } from "react-device-detect";
 
 import './App.css';
 
