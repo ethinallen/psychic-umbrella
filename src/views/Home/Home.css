@@ -72,8 +72,15 @@ body {
 }
 
 .pages {
+  /* snap mandatory on horizontal axis  */
+  scroll-snap-type: x mandatory;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
   height: 100vh;
   width: 100vw;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  overflow-x: scroll;
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
 }

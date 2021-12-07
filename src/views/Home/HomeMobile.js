@@ -13,12 +13,10 @@ class HomeMobile extends Component {
     return (
       <>
         <div className="pages">
-        <div className="navBar"></div>
             <div className="page-container" style={{background: '#065a60'}}>
-              <Page header="Hello, It's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
+              <Page header="Hello, it's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
             </div>
             <div className="page-container" style={{background: '#1b3a4b'}}>
-              <section class="rain"></section>
               <Page header="This is my corner of the internet" sub="You can expect to find projects, thoughts, and various media on this site."/>
             </div>
             <div className="page-container" style={{background: '#3e1f47'}}>

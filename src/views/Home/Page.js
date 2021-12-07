@@ -1,5 +1,5 @@
 import React from 'react';
-import { HiChevronDoubleDown } from "react-icons/hi";
+import { MdDoubleArrow } from "react-icons/md";
 
 import './Page.css';
 
@@ -25,7 +25,7 @@ function Page(props) {
         </div>
 
       </div>
-      <div className = "chevron"><HiChevronDoubleDown /></div>
+      <div className = "chevron"><MdDoubleArrow /></div>
 </>
 
     );
