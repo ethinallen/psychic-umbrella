@@ -10,7 +10,7 @@ class HomeDesktop extends Component {
   render() {
 
     return (
-      <>
+      <div className="App">
         <div className="pages">
             <div className="page-container" style={{background: '#065a60'}}>
               <Page header="Hello, it's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
@@ -25,7 +25,7 @@ class HomeDesktop extends Component {
               <Page header="for work I am an identity solutions engineer @Auth0" sub="we help secure applications"/>
             </div>
         </div>
-      </>
+      </div>
     );
   }
 }

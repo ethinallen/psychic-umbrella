@@ -104,7 +104,7 @@
 }
 
 .chevron {
-  position: absolute;
+  position: relative;
   -webkit-animation-name: bounce;
   -webkit-animation-duration: .8s;
   -webkit-animation-direction: alternate;
