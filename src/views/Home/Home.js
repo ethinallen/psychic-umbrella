@@ -3,7 +3,6 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 import HomeMobile from './HomeMobile'
 import HomeDesktop from './HomeDesktop'
-import Page from './Page'
 
 import './Home.css'
 
