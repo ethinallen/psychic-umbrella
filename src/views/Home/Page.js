@@ -36,12 +36,12 @@ function Page(props) {
       <>
       <div className="topHalf">
         <div className="headerContainer">
-          <div className="header">sometimes</div>
-          <div className="header">this</div>
-          <div className="header">site</div>
-          <div className="header">may</div>
-          <div className="header">be</div>
-          <div className="header broken">broken</div>
+          <div className="broken-header">sometimes</div>
+          <div className="broken-header">this</div>
+          <div className="broken-header">site</div>
+          <div className="broken-header">may</div>
+          <div className="broken-header">be</div>
+          <div className="broken-header broken">broken</div>
         </div>
       </div>
       <div className="content-container">

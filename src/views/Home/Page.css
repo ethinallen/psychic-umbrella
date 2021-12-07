@@ -40,6 +40,14 @@
   padding: 5vw;
 }
 
+.broken-header {
+  color: #D8DEE9;
+  height: 5vh;
+  font-size: 1.2rem;
+  align-content: center;
+  padding: .1rem;
+}
+
 .sub {
   color: #D8DEE9;
   margin: 10vw;
