@@ -1,5 +1,6 @@
 import Home from './views/Home/Home.js';
 import Seattle from './views/Seattle/Seattle.js';
+import Test from './views/Testing/Test.js';
 import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
@@ -25,6 +26,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/seattle" component={Seattle} />
+          <Route path="/test" component={Test} />
         </Switch>
       </Router >
   );
