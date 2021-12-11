@@ -10,19 +10,14 @@ class HomeDesktop extends Component {
 
     return (
       <div className="App">
+        <div className="jumbotron">
+
+        </div>
         <div className="pages">
-            <div className="page-container" style={{background: '#065a60'}}>
-              <Page header="Hello, it's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
-            </div>
-            <div className="page-container" style={{background: '#1b3a4b'}}>
-              <Page header="This is my corner of the internet" sub="You can expect to find projects, thoughts, and various media on this site."/>
-            </div>
-            <div className="page-container" style={{background: '#3e1f47'}}>
-              <Page specialBroken="true" sub="ALTHOUGH I am getting better about deploying to dev first. You can expect outages to become less frequent as time goes on."/>
-            </div>
-            <div className="page-container" style={{background: '#272640'}}>
-              <Page header="for work I am an identity solutions engineer @Auth0" sub="we help secure applications"/>
-            </div>
+              <Page header="Hello, it's nice to meet you!" bkgColor='#065a60' sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
+              <Page header="This is my corner of the internet" bkgColor='#1b3a4b' sub="You can expect to find projects, thoughts, and various media on this site."/>
+              <Page specialBroken="literally anything can go here because i'm dumb as hell" bkgColor='#3e1f47' sub="ALTHOUGH I am getting better about deploying to dev first. You can expect outages to become less frequent as time goes on."/>
+              <Page header="for work I am an identity solutions engineer @Auth0" bkgColor='#272640' sub="we help secure applications"/>
         </div>
       </div>
     );

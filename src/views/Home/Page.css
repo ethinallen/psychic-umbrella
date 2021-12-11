@@ -8,6 +8,25 @@
 
 }
 
+.page {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+
+  position: sticky;
+  top: 0px;
+
+  scroll-snap-type: x mandatory;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  display: flex;
+  align-items: center;
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
+}
+
 .topHalf {
   font-weight: bold;
   font-family: 'Merriweather', serif;

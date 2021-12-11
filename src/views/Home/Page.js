@@ -7,7 +7,7 @@ function Page(props) {
 
   if (props.backg) {
     return (
-      <>
+      <div className="page" style={{background: props.bkgColor}}>
       <div className="imagecontainer">
         <div className="leftHalf">
         <div className="media-container">
@@ -26,14 +26,14 @@ function Page(props) {
 
       </div>
       <div className = "chevron"><MdDoubleArrow /></div>
-</>
+</div>
 
     );
   }
 
   if (props.specialBroken) {
     return (
-      <>
+      <div className="page" style={{background: props.bkgColor}}>
       <div className="topHalf">
         <div className="headerContainer">
           <div className="broken-header">sometimes</div>
@@ -49,12 +49,12 @@ function Page(props) {
           {props.sub}
         </div>
       </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
+    <div className="page" style={{background: props.bkgColor}}>
       <div className="topHalf">
       <div className="header">
         {props.header}
@@ -65,7 +65,7 @@ function Page(props) {
           {props.sub}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
