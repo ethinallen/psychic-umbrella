@@ -1,9 +1,9 @@
 import React from 'react';
 import { MdDoubleArrow } from "react-icons/md";
 
-import './Page.css';
+import './Column.css';
 
-function Page(props) {
+function Column(props) {
 
   if (props.backg) {
     return (
@@ -69,4 +69,4 @@ function Page(props) {
   );
 }
 
-export default Page;
+export default Column;

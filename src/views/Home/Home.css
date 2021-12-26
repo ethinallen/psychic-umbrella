@@ -10,15 +10,42 @@
   width: 100vw;
 }
 
-.page {
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-
-  position: sticky;
-  top: 0px;
+.Home {
+  height: auto;
+  min-height: 100vh;
+  background: linear-gradient(156deg, rgba(2,0,36,1) 0%, rgba(46,52,64,1) 95%, rgba(67,73,86,1) 100%);
+  /* flex-wrap: wrap; */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
+.column {
+  width: 10vw;
+  margin: 4%;
+  border-radius: 25px;
+  opacity: .8;
+  padding: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+
+  min-width: 200px;
+  min-height: 20vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: 100vw;
+}
 
 @keyframes bounce {
   from {
@@ -55,34 +82,46 @@ body {
   height: auto;
   width: 100vw;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 5rem;
   font-family: 'Merriweather', serif;
   bottom: 10px;
 
 }
 
-.page-container {
-  scroll-snap-align: start;
-  height: 100vh;
-  width: 100vw;
+.column-container {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+
+  height: auto;
+  width: 100vw;
 }
 
-.pages {
+.jumbotron {
+  margin-top: 5vh;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-  height: 100vh;
-  width: 100vw;
-  /* snap mandatory on horizontal axis  */
-    scroll-snap-type: x mandatory;
+.big-text {
+  /* margin: 1%; */
+  font-size: 5rem;
+  font-family: 'Merriweather', serif;
+  color: #fff;
+  width: 40vw;
+  max-width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    display: flex;
-    align-items: center;
-    /* Enable Safari touch scrolling physics which is needed for scroll snap */
-    -webkit-overflow-scrolling: touch;
+.image {
+  width: auto;
+  max-width: 40vw;
+  min-width: 300px;
+  max-height: 80vh;
 }

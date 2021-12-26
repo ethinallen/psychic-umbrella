@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
 
-import Page from './Page'
+import Typist from 'react-typist';
+import Column from './Column'
 
 import './Home.css'
 
@@ -10,20 +11,22 @@ class HomeDesktop extends Component {
   render() {
 
     return (
-      <div className="App">
-        <div className="pages">
-            <div className="page-container" style={{background: '#065a60'}}>
-              <Page header="Hello, it's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
+      <div className="Home">
+        <div className="page">
+          <div className="jumbotron">
+            <div className="big-text">
+              <Typist cursor={{ hideWhenDone: true }}>
+                Hello Party People
+              </Typist>
             </div>
-            <div className="page-container" style={{background: '#1b3a4b'}}>
-              <Page header="This is my corner of the internet" sub="You can expect to find projects, thoughts, and various media on this site."/>
-            </div>
-            <div className="page-container" style={{background: '#3e1f47'}}>
-              <Page specialBroken="true" sub="ALTHOUGH I am getting better about deploying to dev first. You can expect outages to become less frequent as time goes on."/>
-            </div>
-            <div className="page-container" style={{background: '#272640'}}>
-              <Page header="for work I am an identity solutions engineer @Auth0" sub="we help secure applications"/>
-            </div>
+            <img className="image" src="https://cdn.andrewemery.io/IMG_5273.jpg" />
+          </div>
+
+          <div className="column-container">
+            <div className="column" style={{background: '#bf616a'}}>Testing, testing. This is just a test. All of this text here? Just sample text. I typed it 4 at a time. Nothing special. It's not pretty, or functional.. </div>
+            <div className="column" style={{background: '#d08770'}}>Testing, testing. This is just a test. All of this text here? Just sample text. I typed it 4 at a time. Nothing special. It's not pretty, or functional.. </div>
+            <div className="column" style={{background: '#b48ead'}}>Testing, testing. This is just a test. All of this text here? Just sample text. I typed it 4 at a time. Nothing special. It's not pretty, or functional.. But then again. What happens if I decide to make this longer? is it fair that one div should require so much spcace when all others require so little? What entitles this div to the space it consumes? Are we all entittled to this space iff we need it? This brings one to question.. need itself.</div>
+          </div>
         </div>
       </div>
     );

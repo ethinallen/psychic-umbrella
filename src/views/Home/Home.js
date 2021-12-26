@@ -3,7 +3,7 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 import HomeMobile from './HomeMobile'
 import HomeDesktop from './HomeDesktop'
-import Page from './Page'
+import Column from './Column'
 
 import './Home.css'
 
@@ -13,7 +13,7 @@ class Home extends Component {
 
     return (
       <>
-        <MobileView><HomeMobile /></MobileView>
+        <MobileView><HomeDesktop /></MobileView>
         <BrowserView><HomeDesktop /></BrowserView>
       </>
     );
