@@ -72,7 +72,7 @@ body {
 }
 
 .pages {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   /* snap mandatory on horizontal axis  */
   scroll-snap-type: x mandatory;
