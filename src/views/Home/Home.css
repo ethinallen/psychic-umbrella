@@ -16,7 +16,7 @@
   background: linear-gradient(156deg, rgba(2,0,36,1) 0%, rgba(46,52,64,1) 95%, rgba(67,73,86,1) 100%);
   /* flex-wrap: wrap; */
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
