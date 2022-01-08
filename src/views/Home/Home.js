@@ -12,7 +12,7 @@ class Home extends Component {
 
     return (
       <>
-        <MobileView><HomeMobile /></MobileView>
+        <MobileView><HomeDesktop /></MobileView>
         <BrowserView><HomeDesktop /></BrowserView>
       </>
     );
