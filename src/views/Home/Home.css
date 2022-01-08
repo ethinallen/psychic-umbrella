@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
-.navBar {
+.nav {
   position: absolute;
-  /* z-index: 10; */
-  border-color: green;
-  background-color: rbga(0,0,0,0);
+  z-index: 10;
+  background-color: rgba(233, 196, 106, .7);
   border-width: 5px;
-  height: 10vh;
+  height: 4.5rem;
   width: 100vw;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-right: 50px;
 }
 
 .page {
@@ -19,6 +24,11 @@
   top: 0px;
 }
 
+
+.button {
+  font-size: 1rem;
+  margin-right: 50px;
+}
 
 @keyframes bounce {
   from {

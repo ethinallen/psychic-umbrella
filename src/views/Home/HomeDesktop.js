@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Page from './Page'
+import NavBar from './NavBar'
 
 import './Home.css'
 
@@ -10,6 +11,9 @@ class HomeDesktop extends Component {
 
     return (
       <div className="App">
+      <NavBar />
+
+
         <div className="pages">
             <div className="page-container" style={{background: '#065a60'}}>
               <Page header="Hello, it's nice to meet you!" sub="You can call me Drew." backg="https://cdn.andrewemery.io/IMG_5273.jpg"/>
