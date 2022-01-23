@@ -6,17 +6,28 @@
   },
   { "title": "Fremont Coffee Company",
     "description": "this is a demo description",
-    "lat": 47.65213867870115,
-    "lng": -122.35293127244682
+    "lat": 47.651763586122684,
+    "lng": -122.35304967967487
   },
   { "title": "Lucky's Pho",
     "description": "this is a demo description",
     "lat": 47.65065195330637,
     "lng":  -122.34966488946932
   },
-  { "title": "Paseo",
+  {
+    "title": "Paseo",
     "description": "this is a demo description",
-    "lat": 47.65893009120536,
-    "lng":   -122.35034119288163
+    "lat": 47.65860882765046,
+    "lng": -122.3502573569327
+  },
+  { "title": "Gas Works Park",
+    "description": "this is the description for Gas works park",
+    "lat":  47.64577534234083,
+    "lng":  -122.33437465878738
+  },
+  { "title": "Golden Gardens Park",
+    "description": "this is the description for Golden Gate Park",
+    "lat":  47.69186159527495,
+    "lng":  -122.40303288181642
   }
 ]
