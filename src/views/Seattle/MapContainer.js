@@ -3,6 +3,7 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import markerData from "../../../src/data/data.json";
 
 export class MapContainer extends Component {
+
   constructor(props) {
     super(props);
     this.onMarkerClick = this.onMarkerClick.bind(this);
@@ -12,6 +13,7 @@ export class MapContainer extends Component {
       selectedPlace: {}
     };
   }
+
   onMarkerClick(props, marker, e) {
     this.setState({
       selectedPlace: props,
@@ -19,6 +21,7 @@ export class MapContainer extends Component {
       showingInfoWindow: true
     });
   }
+
   render() {
     if (!this.props.google) {
       return <div>Loading...</div>;
@@ -28,7 +31,8 @@ export class MapContainer extends Component {
       return <Marker
         name={marker.title}
         onClick={this.onMarkerClick}
-        position={{lat: marker.lat, lng: marker.lng}}
+        position={marker.map}
+        description={marker.description}
       />
     })
 
@@ -53,6 +57,15 @@ export class MapContainer extends Component {
           lng: -122.34996448988886
         }}>
           {markers}
+          <InfoWindow
+            marker={this.state.activeMarker}
+            onClose={this.onInfoWindowClose}
+            visible={this.state.showingInfoWindow}>
+            <div>
+              <h1>{this.state.selectedPlace.name}</h1>
+              <h2>{this.state.selectedPlace.description}</h2>
+            </div>
+        </InfoWindow>
         </Map>
       </div>
     );
