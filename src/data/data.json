@@ -1,33 +1,49 @@
 [
-  { "title": "Fremont - The Center of the Universe",
-    "description": "this is a demo description",
-    "lat": 47.650661583594946,
-    "lng": -122.34996448988886
+  {
+    "title": "Fremont - The Center of the Universe",
+    "description": "",
+    "map": {
+      "lat": 47.650661583594946,
+      "lng": -122.34996448988886
+    }
   },
-  { "title": "Fremont Coffee Company",
-    "description": "this is a demo description",
-    "lat": 47.651763586122684,
-    "lng": -122.35304967967487
+  {
+    "title": "Fremont Coffee Company",
+    "description": "",
+    "map": {
+      "lat": 47.651763586122684,
+      "lng": -122.35304967967487
+    }
   },
-  { "title": "Lucky's Pho",
-    "description": "this is a demo description",
+  {
+    "title": "Lucky's Pho",
+    "description": "",
     "lat": 47.65065195330637,
     "lng":  -122.34966488946932
   },
   {
     "title": "Paseo",
-    "description": "this is a demo description",
-    "lat": 47.65860882765046,
-    "lng": -122.3502573569327
+    "description": "",
+    "map" : {
+      "lat": 47.65860882765046,
+      "lng": -122.3502573569327
+    }
   },
-  { "title": "Gas Works Park",
+  {
+    "title": "Gas Works Park",
+    "inconsistent" : 1234,
     "description": "this is the description for Gas works park",
-    "lat":  47.64577534234083,
-    "lng":  -122.33437465878738
+    "map" : {
+      "lat":  47.64577534234083,
+      "lng":  -122.33437465878738
+    }
   },
-  { "title": "Golden Gardens Park",
+  {
+    "title": "Golden Gardens Park",
     "description": "this is the description for Golden Gate Park",
-    "lat":  47.69186159527495,
-    "lng":  -122.40303288181642
+    "map" : {
+      "lat":  47.69186159527495,
+      "lng":  -122.40303288181642
+    }
   }
 ]
