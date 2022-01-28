@@ -6,17 +6,15 @@ import HomeDesktop from './HomeDesktop'
 
 import './Home.css'
 
-class Home extends Component {
-
-  render() {
-
-    return (
-      <>
-        <MobileView><HomeDesktop /></MobileView>
-        <BrowserView><HomeDesktop /></BrowserView>
-      </>
-    );
-  }
+const Home = () => {
+  return (
+    <>
+      <MobileView><HomeDesktop /></MobileView>
+      <BrowserView><HomeDesktop /></BrowserView>
+    </>
+  )
 }
+
+
 
 export default Home;

@@ -24,7 +24,7 @@ export class MapContainer extends Component {
 
   render() {
     if (!this.props.google) {
-      return <div>Loading...</div>;
+      return <div>fancy seeing you here :o</div>;
     }
 
     const markers = markerData.map(marker => {
@@ -40,7 +40,7 @@ export class MapContainer extends Component {
       <div
         style={{
           position: "relative",
-          height: "calc(100vh - 20px)"
+          height: "100vh"
         }}
       >
       <div>
