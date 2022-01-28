@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Auth0Provider } from '@auth0/auth0-react';
 import reportWebVitals from './reportWebVitals';
 
 export * from "./views/Seattle/Pins"
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Auth0Provider
+          domain="andrewemery.us.auth0.com"
+          clientId="ffJ4I7Vn8tvtmZtGjyK0YuLXkXd209vm"
+          redirectUri={window.location.origin}
+      >    <App />
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
