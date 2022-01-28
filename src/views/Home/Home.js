@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserView, MobileView } from "react-device-detect";
-
-import HomeMobile from './HomeMobile'
 import HomeDesktop from './HomeDesktop'
 
 import './Home.css'
