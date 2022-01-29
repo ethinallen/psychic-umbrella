@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import markerData from "../../../src/data/data.json";
+import "./MapContainer.css";
 
 export class MapContainer extends Component {
 
@@ -51,7 +52,7 @@ export class MapContainer extends Component {
         google={this.props.google}
         onClick={this.onMapClicked}
         style={{ height: '100%', position: 'relative', width: '100%' }}
-        zoom={15}
+        zoom={13}
         initialCenter={{
           lat: 47.650661583594946,
           lng: -122.34996448988886
@@ -61,7 +62,7 @@ export class MapContainer extends Component {
             marker={this.state.activeMarker}
             onClose={this.onInfoWindowClose}
             visible={this.state.showingInfoWindow}>
-            <div>
+            <div className="info-window-card">
               <h1>{this.state.selectedPlace.name}</h1>
               <h2>{this.state.selectedPlace.description}</h2>
             </div>
