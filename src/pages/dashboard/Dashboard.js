@@ -26,7 +26,7 @@ export default function Dashboard(props) {
   return (
     <>
       <PageTitle title="Home" />
-        <Grid container spacing={1}>
+        <Grid container spacing={6}>
             <Window windowData={{
               "size"    : 12,
               "header"  : "hello! my name is drew",
@@ -37,8 +37,14 @@ export default function Dashboard(props) {
                       "if you feel so inclined, please reach out to me at: drew@emery.guru",
                       ]
             }} >
-              <img className="photo" style={{"height" : "60vh", "display" : "flex", "align-itmes" : "right", "border-radius" : "4px"}} src="https://cdn.andrewemery.io/IMG_5273.jpg"></img>
           </Window>
+          {data.windows.map((windowData, index) =>
+            <Grid item xs={windowData.size}>
+              <Window
+              windowData={windowData}
+              />
+            </Grid>
+          )}
         </Grid>
     </>
   );
