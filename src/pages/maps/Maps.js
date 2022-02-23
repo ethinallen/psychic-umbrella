@@ -12,8 +12,6 @@ const lng = parseFloat(-122.34996448988886);
 
 const center = {lat, lng};
 
-const places = [];
-
 // InfoWindow component
 const InfoWindow = (props) => {
   const { place } = props;
@@ -23,7 +21,7 @@ const InfoWindow = (props) => {
     bottom: 150,
     left: '-45px',
     width: 220,
-    backgroundColor: 'red',
+    backgroundColor: 'black',
     boxShadow: '0 2px 7px 1px rgba(0, 0, 0, 0.3)',
     padding: 10,
     fontSize: 14,
@@ -32,7 +30,7 @@ const InfoWindow = (props) => {
 
   return (
     <div style={infoWindowStyle}>
-      <div style={{ fontSize: 16 }}>
+      <div style={{ fontSize: 16, color: "white" }}>
         {place.title}
       </div>
       <div style={{ fontSize: 14 }}>
@@ -49,11 +47,6 @@ const InfoWindow = (props) => {
 const Marker = ({ place }) => {
   const [showWindow, setShowWindow] = React.useState(false);
 
-  const onClick = () => {
-    setShowWindow(true);
-    console.log('hello');
-  }
-
   const markerStyle = {
     border: '1px solid black',
     borderRadius: '50%',
@@ -66,34 +59,37 @@ const Marker = ({ place }) => {
 
   return (
     <>
-      <div style={markerStyle} onClick={onClick}/>
-      {showWindow && <InfoWindow place={place} />}
+      <div style={markerStyle} />
+      <InfoWindow place={place} />
     </>
   );
 };
 
 export default function Maps() {
   var classes = useStyles();
+
+  const markers = markerData.map((marker, index) => {
+    return <Marker
+      key={index}
+      text={marker.description}
+      lat={marker.map.lat}
+      lng={marker.map.lng}
+      place={marker}
+    />
+  })
+
   const [activeWindow, setActiveWindow] = React.useState(-1);
+
+  const onChildClick = (key, childProps) => {
+
+    console.log(childProps);
+    setActiveWindow(key);
+  }
 
 
   return (
     <div className={classes.mapContainer}>
-      <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDM89Z40cGg2DigLdpsDcCUFF609Ux0avs" }}
-          defaultCenter={center}
-          defaultZoom={13}
-        >
-        {markerData.map((marker, index) => {
-          return <Marker
-            key={index}
-            text={marker.description}
-            lat={marker.map.lat}
-            lng={marker.map.lng}
-            place={marker}
-          />
-        })}
-      </GoogleMapReact>
+      <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17Va0dOQrBWkhHMgMRn_H6FPUzNkE2lBU&ehbc=2E312F" width="100%" height="100%"></iframe>
     </div>
   );
 }
