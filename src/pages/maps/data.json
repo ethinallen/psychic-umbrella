@@ -136,8 +136,8 @@
         }
     },
     {
-        "title": "Din tai fun",
-        "description": "",
+        "title": "Din Tai Fung",
+        "description": "Excellent dumplings.",
         "map": {
             "lat": 47.6614929,
             "lng": -122.2996132
@@ -145,7 +145,7 @@
     },
     {
         "title": "Spice Waala",
-        "description": "Great, cheap indian food",
+        "description": "Great, inexpensive indian food",
         "map": {
             "lat": 47.6216271,
             "lng": -122.3122461
@@ -176,7 +176,7 @@
         }
     },
     {
-        "title": "Shawn O\u2019Donnell Fremont",
+        "title": "Shawn O'Donnell's: Irish Pub Seattle",
         "description": "",
         "map": {
             "lat": 47.651538,
@@ -184,7 +184,7 @@
         }
     },
     {
-        "title": "S & L Caf\u00e9 Queen Anne",
+        "title": "S & L Cafe",
         "description": "",
         "map": {
             "lat": 47.639435,
@@ -345,7 +345,7 @@
     },
     {
         "title": "Herkimer coffee",
-        "description": "",
+        "description": "my go-to coffeeshop as of recent; pleasant walk from westlake and a proper venue for catching up on some emails and the like",
         "map": {
             "lat": 47.682439,
             "lng": -122.355114

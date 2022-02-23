@@ -24,15 +24,11 @@ export default function Window({
       <Typography variant="h1" color="textPrimary">
         <div className={classes.windowHeader}>{props.windowData.header}</div>
       </Typography>
-      <Grid container>
-        <Grid spacing={3}>
         {props.windowData.body.map((bodyText, index) =>
           <Typography variant="h2" color="textPrimary">
             <div className={classes.windowBody}>{bodyText}</div>
           </Typography>
         )}
-        </Grid>
-      </Grid>
       </Paper>
     </div>
   );
