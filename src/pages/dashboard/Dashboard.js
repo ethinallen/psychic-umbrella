@@ -27,7 +27,6 @@ export default function Dashboard(props) {
     <>
       <PageTitle title="Home" />
         <Grid container spacing={6}>
-
             <Window windowData={{
               "size"    : 12,
               "header"  : "hello! my name is drew",
