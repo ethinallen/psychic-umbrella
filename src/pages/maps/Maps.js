@@ -89,7 +89,7 @@ export default function Maps() {
 
   return (
     <div className={classes.mapContainer}>
-      <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17Va0dOQrBWkhHMgMRn_H6FPUzNkE2lBU&ehbc=2E312F" width="100%" height="100%"></iframe>
+      <iframe title="let diddle" src="https://www.google.com/maps/d/u/1/embed?mid=17Va0dOQrBWkhHMgMRn_H6FPUzNkE2lBU&ehbc=2E312F" width="100%" height="100%"></iframe>
     </div>
   );
 }
