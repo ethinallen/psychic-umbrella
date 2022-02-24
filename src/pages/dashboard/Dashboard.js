@@ -27,6 +27,7 @@ export default function Dashboard(props) {
     <>
       <PageTitle title="Home" />
         <Grid container spacing={6}>
+
             <Window windowData={{
               "size"    : 12,
               "header"  : "hello! my name is drew",
@@ -38,14 +39,6 @@ export default function Dashboard(props) {
                       ]
             }} >
           </Window>
-          {data.windows.map((windowData, index) =>
-            <Grid item xs={windowData.size}>
-              <Window
-              windowData={windowData}
-              />
-            </Grid>
-          )}
-          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=17Va0dOQrBWkhHMgMRn_H6FPUzNkE2lBU&ehbc=2E312F" width="640" height="480"></iframe>
         </Grid>
     </>
   );
