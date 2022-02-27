@@ -8,9 +8,6 @@ import Layout from "./Layout";
 import Error from "../pages/error";
 import Login from "../pages/login";
 
-// context
-import { useUserState } from "../context/UserContext";
-
 export default function App() {
   // global
 
