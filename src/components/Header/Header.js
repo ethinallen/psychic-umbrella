@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 import {
   AppBar,
   Toolbar,
@@ -13,6 +14,9 @@ import {
   Person as AccountIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
+import LoginButton from "./LoginButton"
+import LogoutButton from "./LogoutButton"
+
 import classNames from "classnames";
 
 // styles
@@ -39,8 +43,11 @@ const notifications = [
   },
 ];
 
+
+
 export default function Header(props) {
   var classes = useStyles();
+  const { user, isAuthenticated } = useAuth0();
 
   // global
   var layoutState = useLayoutState();
@@ -142,49 +149,12 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
-            </Typography>
-            <Typography
-              className={classes.profileMenuLink}
-              component="a"
-              color="primary"
-              href="https://flatlogic.com"
-            >
-              Flalogic.com
+              {isAuthenticated ? user.name : "Sign in to get started!" }
             </Typography>
           </div>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Profile
-          </MenuItem>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Tasks
-          </MenuItem>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Messages
-          </MenuItem>
+
           <div className={classes.profileMenuUser}>
-            <Typography
-              className={classes.profileMenuLink}
-              color="primary"
-              onClick={() => signOut(userDispatch, props.history)}
-            >
-              Sign Out
-            </Typography>
+            {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </div>
         </Menu>
       </Toolbar>
