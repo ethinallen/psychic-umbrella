@@ -16,11 +16,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" render={Layout} />
         <Route path="/" component={Layout} />
-        <Route
-          exact
-          path="/login"
-          render={() => <Redirect to="https://andrewemery.us.auth0.com/authorize" />}
-        />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

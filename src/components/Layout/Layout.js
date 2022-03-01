@@ -5,6 +5,7 @@ import {
   Redirect,
   withRouter,
 } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 import classnames from "classnames";
 import {Box, IconButton, Link} from '@material-ui/core'
 import Icon from '@mdi/react'
@@ -36,6 +37,7 @@ import { useLayoutState } from "../../context/LayoutContext";
 
 function Layout(props) {
   var classes = useStyles();
+  const { loginWithRedirect } = useAuth0();
 
   // global
   var layoutState = useLayoutState();
@@ -60,6 +62,7 @@ function Layout(props) {
                 path="/app/ui"
                 render={() => <Redirect to="/app/ui/icons" />}
               />
+              <Route path="/login" render={() => loginWithRedirect()}/>
               <Route path="/maps" component={Maps} />
               <Route path="/gitter" component={Gitter} />
               <Route path="/app/ui/icons" component={Icons} />
