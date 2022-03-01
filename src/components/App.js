@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // components
 import Layout from "./Layout";
@@ -16,7 +16,11 @@ export default function App() {
       <Switch>
         <Route exact path="/" render={Layout} />
         <Route path="/" component={Layout} />
-        <Route path="/login" component={Login} />
+        <Route
+          exact
+          path="/login"
+          render={() => <Redirect to="https://andrewemery.us.auth0.com/authorize" />}
+        />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
