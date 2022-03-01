@@ -41,7 +41,9 @@ function Layout(props) {
 
   // global
   var layoutState = useLayoutState();
-
+  const url = window.location.href;
+  const inviteMatches = url.match(/invitation=([^&]+)/);
+  const orgMatches = url.match(/organization=([^&]+)/);
   return (
     <div className={classes.root}>
         <>
@@ -62,7 +64,10 @@ function Layout(props) {
                 path="/app/ui"
                 render={() => <Redirect to="/app/ui/icons" />}
               />
-              <Route path="/login" render={() => loginWithRedirect()}/>
+              <Route path="/login" render={() => loginWithRedirect({
+                organization: orgMatches[1],
+                invitation: inviteMatches[1],
+              })}/>
               <Route path="/maps" component={Maps} />
               <Route path="/gitter" component={Gitter} />
               <Route path="/app/ui/icons" component={Icons} />
