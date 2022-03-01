@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 import {
   AppBar,
   Toolbar,
@@ -6,21 +7,24 @@ import {
   Menu,
   MenuItem,
 } from "@material-ui/core";
+
 import {
   Menu as MenuIcon,
   NotificationsNone as NotificationsIcon,
   Person as AccountIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
+import LoginButton from "./LoginButton"
+import LogoutButton from "./LogoutButton"
+
 import classNames from "classnames";
 
 // styles
 import useStyles from "./styles";
 
 // components
-import { Badge, Typography, Button } from "../Wrappers";
+import { Badge, Typography } from "../Wrappers";
 import Notification from "../Notification/Notification";
-import UserAvatar from "../UserAvatar/UserAvatar";
 
 // context
 import {
@@ -30,54 +34,20 @@ import {
 } from "../../context/LayoutContext";
 import { useUserDispatch, signOut } from "../../context/UserContext";
 
-const messages = [
-  {
-    id: 0,
-    variant: "warning",
-    name: "Jane Hew",
-    message: "Hey! How is it going?",
-    time: "9:32",
-  },
-  {
-    id: 1,
-    variant: "success",
-    name: "Lloyd Brown",
-    message: "Check out my new Dashboard",
-    time: "9:18",
-  },
-  {
-    id: 2,
-    variant: "primary",
-    name: "Mark Winstein",
-    message: "I want rearrange the appointment",
-    time: "9:15",
-  },
-  {
-    id: 3,
-    variant: "secondary",
-    name: "Liana Dutti",
-    message: "Good news from sale department",
-    time: "9:09",
-  },
-];
-
 const notifications = [
   {
     id: 0,
     color: "success",
     type: "notification",
-    message: "Hey hey thank you for checking out my website!"
-  },
-  {
-    id: 1,
-    color: "warning",
-    type: "notification",
-    message: "Just a heads up: this site may be broken at times :/",
+    message: "thank you for stopping by"
   },
 ];
 
+
+
 export default function Header(props) {
   var classes = useStyles();
+  const { user, isAuthenticated } = useAuth0();
 
   // global
   var layoutState = useLayoutState();
@@ -85,12 +55,9 @@ export default function Header(props) {
   var userDispatch = useUserDispatch();
 
   // local
-  var [mailMenu, setMailMenu] = useState(null);
-  var [isMailsUnread, setIsMailsUnread] = useState(true);
   var [notificationsMenu, setNotificationsMenu] = useState(null);
   var [isNotificationsUnread, setIsNotificationsUnread] = useState(true);
   var [profileMenu, setProfileMenu] = useState(null);
-  var [isSearchOpen, setSearchOpen] = useState(false);
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -182,49 +149,12 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
-            </Typography>
-            <Typography
-              className={classes.profileMenuLink}
-              component="a"
-              color="primary"
-              href="https://flatlogic.com"
-            >
-              Flalogic.com
+              {isAuthenticated ? user.name : "Sign in to get started!" }
             </Typography>
           </div>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Profile
-          </MenuItem>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Tasks
-          </MenuItem>
-          <MenuItem
-            className={classNames(
-              classes.profileMenuItem,
-              classes.headerMenuItem,
-            )}
-          >
-            <AccountIcon className={classes.profileMenuIcon} /> Messages
-          </MenuItem>
+
           <div className={classes.profileMenuUser}>
-            <Typography
-              className={classes.profileMenuLink}
-              color="primary"
-              onClick={() => signOut(userDispatch, props.history)}
-            >
-              Sign Out
-            </Typography>
+            {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </div>
         </Menu>
       </Toolbar>
