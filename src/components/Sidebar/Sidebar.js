@@ -43,6 +43,12 @@ const structure = [
   },
   {
     id: 6,
+    label: "Finsta",
+    link: "/finsta",
+    icon: <Dot size="large" color="warning" />,
+  },
+  {
+    id: 7,
     label: "Gitter",
     link: "/gitter",
     icon: <Dot size="large" color="warning" />,

@@ -56,4 +56,8 @@ export default makeStyles(theme => ({
       display: "none",
     },
   },
+  mapContainer: {
+    height: "85%",
+    margin: -theme.spacing(1) * 3,
+  },
 }));
