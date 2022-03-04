@@ -36,6 +36,9 @@ export default function Finsta() {
             <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_6020.jpeg" ></img>
           </Grid>
           <Grid item xs={4}>
+            <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_5126.jpeg" ></img>
+          </Grid>
+          <Grid item xs={4}>
             <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_6029.jpeg" ></img>
           </Grid>
         </Grid>
