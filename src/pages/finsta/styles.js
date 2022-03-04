@@ -7,6 +7,7 @@ export default makeStyles(theme => ({
   },
   window: {
     height: "100%",
-    maxWidth: "100%"
+    maxWidth: "100%",
+    objectFit: "contain",
   }
 }));

@@ -13,7 +13,7 @@ export default function Finsta() {
       <>
         <PageTitle title="Fake Instagram" />
 
-        <Grid container spacing={1}>
+        <Grid container spacing={.5}>
           <Grid item xs={4}>
             <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_2554.jpeg" ></img>
           </Grid>
@@ -28,6 +28,12 @@ export default function Finsta() {
           </Grid>
           <Grid item xs={4}>
             <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_4896.jpeg" ></img>
+          </Grid>
+          <Grid item xs={4}>
+            <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_6014.jpeg" ></img>
+          </Grid>
+          <Grid item xs={4}>
+            <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_6020.jpeg" ></img>
           </Grid>
           <Grid item xs={4}>
             <img className={classes.window} alt="" src="https://cdn.andrewemery.io/insta/IMG_6029.jpeg" ></img>
