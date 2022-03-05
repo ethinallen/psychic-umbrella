@@ -10,7 +10,7 @@ export default function Window(props) {
   var classes = useStyles();
 
     return (
-      <Grid item xs={4}>
+      <Grid item xs={4} style={{"backgroundColor" : "black"}}>
         <img className={classes.window} alt="" src={props.source} ></img>
       </Grid>
     );

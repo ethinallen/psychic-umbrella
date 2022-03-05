@@ -6,8 +6,9 @@ export default makeStyles(theme => ({
     margin: -theme.spacing(1) * 3,
   },
   window: {
-    height: "95%",
-    maxWidth: "95%",
+    // height: "100%",
+    maxWidth: "100%",
     objectFit: "contain",
+    objectPosition: "center",
   }
 }));
