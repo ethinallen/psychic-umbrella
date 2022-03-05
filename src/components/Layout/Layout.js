@@ -29,6 +29,7 @@ import Typography from "../../pages/typography";
 import Notifications from "../../pages/notifications";
 import Maps from "../../pages/maps";
 import Gitter from "../../pages/gitter";
+import Finsta from "../../pages/finsta"
 import Icons from "../../pages/icons";
 import Charts from "../../pages/charts";
 
@@ -70,6 +71,7 @@ function Layout(props) {
               })}/>
               <Route path="/maps" component={Maps} />
               <Route path="/gitter" component={Gitter} />
+              <Route path="/finsta" component={Finsta} />
               <Route path="/app/ui/icons" component={Icons} />
               <Route path="/app/ui/charts" component={Charts} />
             </Switch>
