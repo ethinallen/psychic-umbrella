@@ -9,6 +9,6 @@ export default makeStyles(theme => ({
     // height: "100%",
     maxWidth: "100%",
     objectFit: "contain",
-    objectPosition: "center",
+    // objectPosition: "center",
   }
 }));

@@ -14,7 +14,7 @@ export default function Finsta() {
       <>
         <PageTitle title="Fake Instagram" />
 
-        <Grid container spacing={1}>
+        <Grid container spacing={2} padding={1}>
           <Window source="https://cdn.andrewemery.io/insta/IMG_2554.jpeg" />
           <Window source="https://cdn.andrewemery.io/insta/IMG_2557.jpeg" />
           <Window source="https://cdn.andrewemery.io/insta/IMG_2567.jpeg" />
