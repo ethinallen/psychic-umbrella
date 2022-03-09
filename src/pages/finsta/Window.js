@@ -21,20 +21,15 @@ export default function Window(props) {
 
 function makeWidth() {
   var width = window.screen.availWidth;
-  console.log(width);
   switch (true) {
     case (width < 500):
       console.log("yeet");
       return 6;
-      break;
     case (width < 2000):
       return 4;
-      break;
     case (width > 2000):
       return 3;
-      break;
     default:
       return 3;
-      break;
   }
 }
