@@ -12,8 +12,8 @@ import { LayoutProvider } from "./context/LayoutContext";
 import { UserProvider } from "./context/UserContext";
 
 import Amplify from "@aws-amplify/core"
-import config from './aws-exports'
-Amplify.configure(config);
+// import config from './aws-exports'
+// Amplify.configure(config);
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
