@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-psychicumbrella-dev-95425-authRole",
+      "UnauthRoleArn": "arn:aws:iam::824216238634:role/amplify-psychicumbrella-dev-95425-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::824216238634:role/amplify-psychicumbrella-dev-95425-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-psychicumbrella-dev-95425-deployment",
+      "UnauthRoleName": "amplify-psychicumbrella-dev-95425-unauthRole",
+      "StackName": "amplify-psychicumbrella-dev-95425",
+      "StackId": "arn:aws:cloudformation:us-east-2:824216238634:stack/amplify-psychicumbrella-dev-95425/fb7e6a70-9fd1-11ec-8b1c-0a649f7b48fe",
+      "AmplifyAppId": "d2iw78h6w5edus"
+    }
+  }
+}

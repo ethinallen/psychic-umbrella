@@ -1,7 +1,7 @@
 // src/components/logout-button.js
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Badge, Typography } from "../Wrappers";
+import { Typography } from "../Wrappers";
 
 import useStyles from "./styles";
 
