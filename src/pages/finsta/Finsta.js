@@ -4,7 +4,8 @@ import Window from './Window'
 import PageTitle from '../../components/PageTitle';
 import { API, graphqlOperation } from 'aws-amplify';
 import GetUser from "../../graphql/queries"
-import { graphql } from "react-apollo";
+
+const veryTemporaryFix = shuffle(['https://cdn.andrewemery.io/insta/IMG_5054.jpeg', 'https://cdn.andrewemery.io/insta/IMG_2557.jpeg', 'https://cdn.andrewemery.io/insta/IMG_4896.jpeg', 'https://cdn.andrewemery.io/insta/IMG_6014.jpeg', 'https://cdn.andrewemery.io/insta/IMG_6020.jpeg', 'https://cdn.andrewemery.io/insta/IMG_4797.jpeg', 'https://cdn.andrewemery.io/insta/IMG_2567.jpeg', 'https://cdn.andrewemery.io/insta/IMG_5543.jpeg', 'https://cdn.andrewemery.io/insta/IMG_5993.jpeg', 'https://cdn.andrewemery.io/insta/IMG_5126.jpeg', 'https://cdn.andrewemery.io/insta/IMG_6029.jpeg', 'https://cdn.andrewemery.io/insta/IMG_2554.jpeg'])
 
 
 const getUserProfile = async () => {
@@ -36,19 +37,19 @@ function Finsta() {
     const [apiResponse, setApiResponse] = useState([]);
 
     useEffect(() => {
-
         getUserProfile().then(
           result => setApiResponse(result));
     },[]);
 
-    console.log(apiResponse);
+    console.log({"tFix": veryTemporaryFix});
 
-    var windows = apiResponse.map((addr, i) =>  <Window key={addr} source={addr} />);
+    // var windows = apiResponse.map((addr, i) =>  <Window key={addr} source={addr} />);
+    var windows = veryTemporaryFix.map((addr, i) =>  <Window key={addr} source={addr} />);
 
     return (
       <>
         <PageTitle title="Fake Instagram" />
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           {windows}
         </Grid>
       </>
@@ -57,15 +58,3 @@ function Finsta() {
 }
 
 export default Finsta;
-
-/*          <Window source="https://cdn.andrewemery.io/insta/IMG_2554.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_2557.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_2567.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_4797.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_4896.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_6014.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_6020.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_5126.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_6029.jpeg" />
-          <Window source="https://cdn.andrewemery.io/insta/IMG_5543.jpeg" />
-          */
