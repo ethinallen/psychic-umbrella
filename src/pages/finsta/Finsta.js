@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Grid } from '@material-ui/core';
 import Window from './Window'
 import PageTitle from '../../components/PageTitle';
-import { API, graphqlOperation } from 'aws-amplify';
-import GetUser from "../../graphql/queries"
-import { useAuth0 } from '@auth0/auth0-react';
-import { AppSyncClient } from "@aws-sdk/client-appsync";
 
 const veryTemporaryFix = shuffle([
   'https://cdn.andrewemery.io/insta/IMG_5054.jpeg',
@@ -19,13 +15,14 @@ const veryTemporaryFix = shuffle([
   'https://cdn.andrewemery.io/insta/IMG_5993.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_5126.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_6029.jpeg',
-  'https://cdn.andrewemery.io/insta/IMG_2554.jpeg'])
+  'https://cdn.andrewemery.io/insta/IMG_2554.jpeg']
+)
 
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
 
   // While there remain elements to shuffle...
-  while (currentIndex != 0) {
+  while (currentIndex !== 0) {
 
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
@@ -42,7 +39,7 @@ function shuffle(array) {
 function Finsta() {
 
     // var windows = apiResponse.map((addr, i) =>  <Window key={addr} source={addr} />);
-    var windows = veryTemporaryFix.map((addr, i) =>  <Window key={addr} source={addr} />);
+    var windows = veryTemporaryFix.map((addr, i) =>  <Window key={i} source={addr} />);
 
     return (
       <>
