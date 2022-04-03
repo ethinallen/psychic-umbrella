@@ -38,19 +38,19 @@ const structure = [
     id: 5,
     label: "Seattle Map",
     link: "/maps",
-    icon: <Icons.Map size="large" color="warning" />,
+    icon: <Icons.Map size="large" color="primary" />,
   },
   {
     id: 6,
     label: "Finsta",
     link: "/finsta",
-    icon: <Icons.CameraRoll size="large" color="warning" />,
+    icon: <Icons.CameraRoll size="large" color="primary" />,
   },
   {
     id: 7,
     label: "Gitter",
     link: "/gitter",
-    icon: <Icons.Code size="large" color="warning" />,
+    icon: <Icons.Code size="large" color="primary" />,
   },
 ];
 

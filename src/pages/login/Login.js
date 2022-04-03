@@ -7,7 +7,7 @@ import {
   Tabs,
   Tab,
   TextField,
-  Fade,
+  Alpha,
 } from "@material-ui/core";
 import { withRouter } from "react-router-dom";
 import classnames from "classnames";
@@ -64,11 +64,11 @@ function Login(props) {
                 <Typography className={classes.formDividerWord}>or</Typography>
                 <div className={classes.formDivider} />
               </div>
-              <Fade in={error}>
+              <Alpha in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
                   Something is wrong with your login or password :(
                 </Typography>
-              </Fade>
+              </Alpha>
               <TextField
                 id="email"
                 InputProps={{
@@ -142,11 +142,11 @@ function Login(props) {
               <Typography variant="h2" className={classes.subGreeting}>
                 Create your account
               </Typography>
-              <Fade in={error}>
+              <Alpha in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
                   Something is wrong with your login or password :(
                 </Typography>
-              </Fade>
+              </Alpha>
               <TextField
                 id="name"
                 InputProps={{

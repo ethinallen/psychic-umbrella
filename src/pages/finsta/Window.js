@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react';
-import { Grid, withStyles } from '@material-ui/core';
-import PageTitle from '../../components/PageTitle';
+import React from 'react';
+import { Grid } from '@material-ui/core';
 
 // import styles
 import useStyles from "./styles";

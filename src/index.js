@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { useHistory } from 'react-router-dom';
 import { Auth0Provider } from "@auth0/auth0-react";
 import { ThemeProvider } from "@material-ui/styles";
 import { CssBaseline } from "@material-ui/core";
@@ -11,7 +10,6 @@ import * as serviceWorker from "./serviceWorker";
 import { LayoutProvider } from "./context/LayoutContext";
 import { UserProvider } from "./context/UserContext";
 
-import Amplify from "@aws-amplify/core"
 // import config from './aws-exports'
 // Amplify.configure(config);
 
