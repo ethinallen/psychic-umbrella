@@ -4,7 +4,10 @@ import {
   Switch,
   Redirect,
   withRouter,
+  useLocation,
 } from "react-router-dom";
+import usePageTracking from './usePageTracking';
+
 import { useAuth0 } from "@auth0/auth0-react";
 import classnames from "classnames";
 import {Box, IconButton, Link} from '@material-ui/core'
@@ -45,6 +48,8 @@ function Layout(props) {
   const url = window.location.href;
   const inviteMatches = url.match(/invitation=([^&]+)/);
   const orgMatches = url.match(/organization=([^&]+)/);
+  usePageTracking();
+
   return (
     <div className={classes.root}>
         <>

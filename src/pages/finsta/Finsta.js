@@ -83,8 +83,9 @@ const veryTemporaryFix = shuffle([
   			heading: 'Weiner Eater',
   			subheading: 'Posted 30m ago',
   			profileImage: 'https://cdn.andrewemery.io/insta/IMG_2554.jpeg',
-  		}}]
-)
+  		}
+  }
+])
 
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
