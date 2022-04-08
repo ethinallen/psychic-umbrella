@@ -28,11 +28,8 @@ export default function Dashboard(props) {
             "size"    : 8,
             "header"  : "i stand on the shoulders of giants.",
             "body" : [
-                    "i could never make an explicit list of people to thank for helping me get to where i am today.",
-                    "it's taken a lot of support, love, and encouragement from a lot of people to get me here.",
-                    "and i am confident it will take even more to get me where i want to go.",
-                    "at present i am furthering my knowledge of web technologies.",
-                    "ultimately, i want to make a difference in my community through technology.",
+                    "i could never make an explicit list of people to thank for helping me get to where i am today. it's taken a lot of support, love, and encouragement from a lot of people to get me here and i am confident it will take even more to get me where i want to go.",
+                    "at present i am furthering my knowledge of web technologies. ultimately, i want to make a difference in my community through technology.",
                     ]
           }} >
         </Window>
@@ -40,7 +37,6 @@ export default function Dashboard(props) {
           "size"    : 4,
           "header"  : "you can expect photos, videos, and code snippets to be found here.",
           "body" : [
-                  "things will come and go but i will try to always keep something on this domain.",
                   "all opinions here are mine. content, code, designs are posted here as is, with no warranties of any kind.",
                   ""
                   ]
