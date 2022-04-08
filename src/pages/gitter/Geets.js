@@ -28,7 +28,7 @@ function Geets({ geets }) {
           subheader={geet.date}
         />
          <CardContent>
-           <Typography variant="body2" color="text.secondary" component="div"><b>Commit Message:</b> {geet.message}</Typography>
+           <Typography variant="body2" color="text.secondary" component="div">{geet.message}</Typography>
          </CardContent>
        </Card>
        </div>

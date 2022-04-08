@@ -29,7 +29,7 @@ const structure = [
     id: 2,
     label: "Resume",
     link: "https://cdn.andrewemery.io/resume.pdf",
-    icon: <Icons.Assignment style={{color: useTheme.secondary}}/>
+    icon: <Icons.Assignment />
 ,
   },
   { id: 3, type: "divider" },
