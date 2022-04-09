@@ -5,7 +5,8 @@ import PageTitle from '../../components/PageTitle';
 import Stories from 'react-insta-stories';
 import "./Finsta.css";
 
-const veryTemporaryFix = shuffle(['https://cd.andrewemery.io/insta/3ba814ee-f9a8-4795-b30e-b40519334e68.jpeg',
+const veryTemporaryFix = shuffle([
+  'https://cdn.andrewemery.io/insta/3ba814ee-f9a8-4795-b30e-b40519334e68.jpeg',
   'https://cdn.andrewemery.io/insta/62863721731__7C093110-1023-46FB-8F5A-10A1E29480B1.jpeg',
   'https://cdn.andrewemery.io/insta/A015A977-51AE-4944-809B-21C44B9FE53E.jpeg',
   'https://cdn.andrewemery.io/insta/CD5529E7-1AC7-48E3-BB94-A2D951AF32F4.jpeg',
