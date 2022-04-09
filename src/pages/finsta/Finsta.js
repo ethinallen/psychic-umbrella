@@ -52,11 +52,12 @@ const veryTemporaryFix = shuffle(['https://cd.andrewemery.io/insta/3ba814ee-f9a8
   'https://cdn.andrewemery.io/insta/IMG_6446.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_6937.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_7037.jpeg',
-  'https://cdn.nandrewemery.io/insta/IMG_7108.jpeg',
+  'https://cdn.andrewemery.io/insta/IMG_7108.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_7118.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_7160.jpeg',
   'https://cdn.andrewemery.io/insta/IMG_7210.jpeg',
-  'https://cdn.andrewemery.io/insta/preference3.jpeg'])
+  'https://cdn.andrewemery.io/insta/preference3.jpeg'
+])
 
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
