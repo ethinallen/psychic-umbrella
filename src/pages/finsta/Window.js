@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
+import LazyLoad from 'react-lazy-load';
 
 // import styles
 import useStyles from "./styles";
@@ -12,11 +13,12 @@ export default function Window(props) {
 
     return (
       <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">
-        <img className={classes.window} alt="" src={props.source} ></img>
+        <LazyLoad>
+          <img className={classes.window} alt="" src={props.source} ></img>
+        </LazyLoad>
       </Grid>
     );
 }
-
 
 function makeWidth() {
   var width = window.screen.availWidth;
