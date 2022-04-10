@@ -34,7 +34,6 @@ import Maps from "../../pages/maps";
 import Gitter from "../../pages/gitter";
 import Finsta from "../../pages/finsta"
 import Icons from "../../pages/icons";
-import Charts from "../../pages/charts";
 
 // context
 import { useLayoutState } from "../../context/LayoutContext";
@@ -78,7 +77,6 @@ function Layout(props) {
               <Route path="/gitter" component={Gitter} />
               <Route path="/finsta" component={Finsta} />
               <Route path="/app/ui/icons" component={Icons} />
-              <Route path="/app/ui/charts" component={Charts} />
             </Switch>
             <Box
               mt={5}

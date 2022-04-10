@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import Window from './Window'
 import PageTitle from '../../components/PageTitle';
-import Stories from 'react-insta-stories';
+import { trackWindowScroll } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import "./Finsta.css";
 
 const veryTemporaryFix = shuffle([
@@ -79,18 +80,43 @@ function shuffle(array) {
 }
 
 function Finsta() {
+  var containerWidth = makeWidth();
 
-    var windows = veryTemporaryFix.map((addr, i) =>  <Window key={i} source={addr} />);
+  return (
+    <>
+    <PageTitle title="Fake Instagram" />
+    <Grid container spacing={1}>
+      {veryTemporaryFix.map((photo) =>
+        <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">
 
-    return (
-      <>
-      <PageTitle title="Fake Instagram" />
-      <Grid container spacing={1}>
-        {windows}
-      </Grid>
-      </>
-    );
+        <LazyLoadImage
+          width={"100%"}
+          src={photo}
+          effect="black-and-white"
+        />
+        </Grid>
+      )}
+    </Grid>
+    </>
+  );
 
 }
 
-export default Finsta;
+function makeWidth() {
+  var width = window.screen.availWidth;
+  switch (true) {
+    case (width < 500):
+      console.log("yeet");
+      return 6;
+    case (width < 2000):
+      return 4;
+    case (width > 2000):
+      return 3;
+    default:
+      return 3;
+  }
+}
+
+
+// export default Finsta;
+export default trackWindowScroll(Finsta);

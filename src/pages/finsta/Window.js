@@ -1,11 +1,13 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import LazyLoad from 'react-lazy-load';
+import {trackWindowScroll} from 'react-lazy-load-image-component';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // import styles
 import useStyles from "./styles";
 
-export default function Window(props) {
+function Window(props) {
   var containerWidth = makeWidth();
 
   console.log(containerWidth);
@@ -13,11 +15,19 @@ export default function Window(props) {
 
     return (
       <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">
-        <LazyLoad>
-          <img className={classes.window} alt="" src={props.source} ></img>
-        </LazyLoad>
+      <LazyLoadImage
+      alt={"useful alt"}
+      // height={"100%"}
+      width={"100%"}
+      src={props.source}
+      afterLoad={yeet}
+      />
       </Grid>
     );
+}
+
+function yeet() {
+  console.log('yeeet');
 }
 
 function makeWidth() {
@@ -34,3 +44,5 @@ function makeWidth() {
       return 3;
   }
 }
+
+export default trackWindowScroll(Window);
