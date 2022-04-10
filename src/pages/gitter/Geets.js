@@ -4,7 +4,9 @@ import {
   CardContent,
   Grid,
   CardMedia,
-  Typography
+  Typography,
+  Avatar,
+  CardHeader
 } from '@material-ui/core';
 
 import useStyles from "./styles";
@@ -18,19 +20,17 @@ function Geets({ geets }) {
     {geets.map((geet) => (
       <div className={classes.cardContainer}>
         <Card>
-           <CardMedia
-             component="img"
-             image={geet.avatarurl}
-           />
-           <CardContent>
-             <Typography gutterBottom variant="h5" component="div">
-               {geet.username}
-             </Typography>
-             <Typography variant="body4" color="text.secondary" component="div"><b>Repo:</b> <a href={geet.repo_url} >{geet.repo_name}</a></Typography>
-             <Typography variant="body3" color="text.secondary" component="div"><b>Date:</b>{geet.date}</Typography>
-             <Typography variant="body2" color="text.secondary" component="div"><b>Commit Message:</b> {geet.message}</Typography>
-           </CardContent>
-         </Card>
+          <CardHeader
+          avatar={
+            <Avatar src={geet.avatarurl} />
+                }
+          title={geet.username}
+          subheader={geet.date}
+        />
+         <CardContent>
+           <Typography variant="body2" color="text.secondary" component="div">{geet.message}</Typography>
+         </CardContent>
+       </Card>
        </div>
     ))}
 
