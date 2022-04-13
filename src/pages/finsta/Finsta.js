@@ -84,7 +84,7 @@ function Finsta() {
 
   return (
     <>
-    <PageTitle title="Fake Instagram" />
+    <PageTitle title="Hey Aaron :)" />
     <Grid container spacing={1}>
       {veryTemporaryFix.map((photo) =>
         <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">

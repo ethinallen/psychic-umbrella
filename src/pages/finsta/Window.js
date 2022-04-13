@@ -15,13 +15,12 @@ function Window(props) {
 
     return (
       <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">
-      <LazyLoadImage
-      alt={"useful alt"}
-      // height={"100%"}
-      width={"100%"}
-      src={props.source}
-      afterLoad={yeet}
-      />
+        <LazyLoadImage
+          alt={"useful alt"}
+          width={"100%"}
+          src={props.source}
+          afterLoad={yeet}
+        />
       </Grid>
     );
 }
@@ -34,7 +33,6 @@ function makeWidth() {
   var width = window.screen.availWidth;
   switch (true) {
     case (width < 500):
-      console.log("yeet");
       return 6;
     case (width < 2000):
       return 4;
