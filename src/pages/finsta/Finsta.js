@@ -84,7 +84,7 @@ function Finsta() {
 
   return (
     <>
-    <PageTitle title="Hey Aaron :)" />
+    <PageTitle title="Fake Instagram" desc="whimsical selection of photos from my camera roll"/>
     <Grid container spacing={1}>
       {veryTemporaryFix.map((photo) =>
         <Grid container item xs={containerWidth} alignItems="center" justifyContent="center">
@@ -106,7 +106,6 @@ function makeWidth() {
   var width = window.screen.availWidth;
   switch (true) {
     case (width < 500):
-      console.log("yeet");
       return 6;
     case (width < 2000):
       return 4;
@@ -116,7 +115,6 @@ function makeWidth() {
       return 3;
   }
 }
-
 
 // export default Finsta;
 export default trackWindowScroll(Finsta);
