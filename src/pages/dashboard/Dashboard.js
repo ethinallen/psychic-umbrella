@@ -19,7 +19,7 @@ export default function Dashboard(props) {
               "body" : [
                       "i love meeting people, especially you!",
                       "to be honest, i have no idea why you are here.. but i would appreciate getting to know what brought you here.",
-                      "for work i am a solutions engineer @Auth0 (now @Okta)",
+                      "for work i am a solutions engineer @esper",
                       "if you feel so inclined, please reach out to me at: drew@emery.guru",
                       ]
             }} >
